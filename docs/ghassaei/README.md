@@ -1,0 +1,1 @@
+http://www.instructables.com/id/Arduino-Bike-Speedometer/
