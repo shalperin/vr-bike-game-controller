@@ -2,7 +2,14 @@
 using System.Collections;
 using Uniduino;
 
-//based on uniduino sample digital read tutorial
+/* Use an instance of this class to read cadence from a reed switch based
+ * arduino circuit connected to an exercise bike.
+ * 
+ * + Set arduino pin # on public pin.
+ * + Exports currentCadence as a public variable.
+ * + Use in conjunction with a cadence smoother.
+ */
+
 public class ArduinoCadence : MonoBehaviour {
 	public int pin = 8;
 	public Arduino arduino;

@@ -1,6 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/* Use an instance of this class to smoothe a cadence value
+ * using a trailing average.
+ * 
+ * + Accepts a game object with a ArduinoCadence script bound to it.
+ * + Configurable for number of slots to use in trailing average (ntrail)
+ * + Configurable for time between reads (time)
+ * + Exposes public output variable smoothed.
+ * 
+ */
 public class CadenceSmoother : MonoBehaviour {
 	public  float time = .01f;
 	public int ntrail = 50;
