@@ -1,3 +1,5 @@
+#### Added Oculus Rift DK-1 support 4/3/2014
+
 <img src="http://www.samhalperin.com/img/content/vr-cycle/2.gif"></img>
 
 <P>My parents used to have a vinyl album with the entire
@@ -23,6 +25,11 @@ Sensor data smoothing.
 
 Debugging / development script - blink a virtual "LED"
 
+<img src="http://blog.samhalperin.com/img/content/vr-cycle/rift1.png"></img>
+
+View through the oculus rift.
+
+<A href="http://youtu.be/8-5TP7u9_3g"><img src="http://www.samhalperin.com/img/content/vr-cycle/youtube.png"></img></a>
 
 <h1>Resources</h1>
 <ul>
