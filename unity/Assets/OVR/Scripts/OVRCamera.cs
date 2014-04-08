@@ -227,8 +227,8 @@ public class OVRCamera : OVRComponent
 			{
 				
 				Vector3 a = camera.transform.rotation.eulerAngles;
-				a.x = 0; 
-				a.z = 0;
+				//a.x = 0;   //SH hacked to also export X and Z.
+				//a.z = 0;
 				transform.parent.transform.eulerAngles = a;
 			}
 			/*
