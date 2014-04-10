@@ -19,7 +19,7 @@ public class ArduinoCadence : MonoBehaviour {
 	private float currentTime = 0;
 	float lastTime;
 	public float currentCadence = 0;
-
+	public int pedalCount = 0;
 
 
 
@@ -65,6 +65,7 @@ public class ArduinoCadence : MonoBehaviour {
 				} else {
 					currentCadence = 500 / deltaTime;
 				}
+				pedalCount++;
 				skipIters = 20;
 			} else if (currentTime - lastTime > 1500) {
 				currentCadence = 0;

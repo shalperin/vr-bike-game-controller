@@ -31,6 +31,8 @@ View through the oculus rift.
 
 <A href="http://youtu.be/8-5TP7u9_3g"><img src="http://www.samhalperin.com/img/content/vr-cycle/youtube.png"></img></a>
 
+<a href="https://www.youtube.com/watch?v=gG0tEmPvsMc"><img src="http://www.samhalperin.com/img/content/vr-cycle/youtube2.png"></img></a>
+
 <h1>Resources</h1>
 <ul>
 <li><a href="http://www.instructables.com/id/Arduino-Bike-Speedometer/">http://www.instructables.com/id/Arduino-Bike-Speedometer/</a> by Amanda Ghassaei</li>
