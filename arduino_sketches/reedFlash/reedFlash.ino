@@ -1,15 +1,14 @@
-//BLUM tutorial 2
+// Flash an LED when the reed switch triggers.
+// based on Jeremy Blum tutorial 2: http://youtu.be/_LCCGFSMOr4
+// and on Arduino button tutorial: http://arduino.cc/en/Tutorial/Button
 
 int switchPin = 8;
 int ledPin = 13;
 boolean lastButton = LOW;
 boolean ledOn = false;
 boolean currentButton = LOW;
-long lastTime = 0;
-long INF = 99999999;
 
 void setup() {
-  Serial.begin(9600);
   pinMode(switchPin, INPUT);
   pinMode(ledPin, OUTPUT);
 }
@@ -24,28 +23,13 @@ boolean debounce(boolean last) {
   return current;
 }
 
-long getDeltaTimeAndUpdateTimer() {
-  long currentTime = millis();
-  long deltaTime = currentTime - lastTime;
-  lastTime = currentTime;
-  return deltaTime;
-}
-
-  
 void loop() {
-  long currentTime = millis();
-
   currentButton = debounce(lastButton);
   if (lastButton == LOW && currentButton == HIGH) {
     digitalWrite(ledPin, HIGH);
-    Serial.println(getDeltaTimeAndUpdateTimer());
     delay(200);
     digitalWrite(ledPin, LOW);
-  }  else if (currentTime - lastTime > 2500) {
-    Serial.println(INF);
-    lastTime = currentTime;
-  }
-  
+  }  
   lastButton = currentButton;
 }
 
