@@ -11,21 +11,21 @@ a profound effect on me!</p>
 <p>Here I've used a reed switch based sensor attached to a portable, and
 minimal exercise bike.  When the pedals reach a certain angle, the switch closes, driving a timer.  The software reads time between interval, producing pedal cadence which is a good analog for bike velocity. (With some algorithmic smoothing.)</p>
 
-<img src="http://blog.samhalperin.com/img/content/vr-cycle/030414-breadboard-mounted.jpg"></img>
+<img src="http://www.samhalperin.com/img/content/vr-cycle/030414-breadboard-mounted.jpg"></img>
 
-<img src="http://blog.samhalperin.com/img/content/vr-cycle/030414-magnet-over-reed.jpg"></img>
+<img src="http://www.samhalperin.com/img/content/vr-cycle/030414-magnet-over-reed.jpg"></img>
 
-<img src="http://blog.samhalperin.com/img/content/vr-cycle/030314-breadboard.jpg"></img>
+<img src="http://www.samhalperin.com/img/content/vr-cycle/030314-breadboard.jpg"></img>
 Breadboard with reed switch (lower left), and Arduino microcontroller. Circuit is closely based on Jeremy Blum's Arduino tutorials #1, #2.
 
-<img src="http://blog.samhalperin.com/img/content/vr-cycle/test2.png"></img>
+<img src="http://www.samhalperin.com/img/content/vr-cycle/test2.png"></img>
 Sensor data smoothing.
 
-<img src="http://blog.samhalperin.com/img/content/vr-cycle/virtual-led.png"></img>
+<img src="http://www.samhalperin.com/img/content/vr-cycle/virtual-led.png"></img>
 
 Debugging / development script - blink a virtual "LED"
 
-<img src="http://blog.samhalperin.com/img/content/vr-cycle/rift1.png"></img>
+<img src="http://www.samhalperin.com/img/content/vr-cycle/rift1.png"></img>
 
 View through the oculus rift.
 
