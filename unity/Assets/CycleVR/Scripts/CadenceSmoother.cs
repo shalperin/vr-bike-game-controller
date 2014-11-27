@@ -12,7 +12,7 @@ using System.Collections;
  * 
  */
 public class CadenceSmoother : MonoBehaviour {
-	public  float time = .01f;
+	public  float time = .04f;
 	public int ntrail = 50;
 	public GameObject arduinoCadenceObject;
 	private int pointer = 0;
