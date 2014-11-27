@@ -5,25 +5,33 @@ using Uniduino;
 /* Use an instance of this class to read cadence from a reed switch based
  * arduino circuit connected to an exercise bike.
  * 
- * + Set arduino pin # on public pin.
- * + Exports currentCadence as a public variable.
- * + Use in conjunction with a cadence smoother.
+ * Use in conjunction with a cadence smoother.
+ *
  */
 
 public class ArduinoCadence : MonoBehaviour {
-	public int pin = 8;
+	/* Output Variablies */
+	public float currentCadence = 0;	// msec since last revolution
+	public int pedalCount = 0;			// # of revolutions since start
+	
+	/* Configuration variables */
+	public int PIN = 8; 				// Arduino READ pin
+	public int NO_READ_ZERO_CADENCE		// Longest cadence value before cadence goes
+		= 1500;			 				// to 0.	
+	public int DEBOUNCE_CYCLES = 1;		/* # of frames to skip as switch debounce
+										   A value of 1 here would debounce for 50 msec
+										   assuming the frame rate was 20FPS. 
+										   see: http://www.ganssle.com/debouncing.htm
+										   */
+											
+
 	public Arduino arduino;
 
+	
 	private int currentSwitch = Arduino.LOW;
 	private int lastSwitch = Arduino.LOW;
 	private float currentTime = 0;
-	float lastTime;
-	public float currentCadence = 0;
-	public int pedalCount = 0;
-
-
-
-	/* crude debounce hack */
+	private float lastTime;
 	int skipIters = 0;
 
 	void Start () 
@@ -36,11 +44,12 @@ public class ArduinoCadence : MonoBehaviour {
 	
 	void ConfigurePins ()
 	{
-		arduino.pinMode(pin, PinMode.INPUT);
-		arduino.reportDigital((byte)(pin/8), 1);
+		arduino.pinMode(PIN, PinMode.INPUT);
+		arduino.reportDigital((byte)(PIN/8), 1);
 	}
 
-	float GetDeltaTimeAndUpdateTimer() {
+	float GetDeltaTimeAndUpdateTimer() 
+	{
 		float deltaTime = currentTime - lastTime;
 		lastTime = currentTime;
 		return deltaTime;
@@ -48,30 +57,30 @@ public class ArduinoCadence : MonoBehaviour {
 
 	void Update () 
 	{
-		/* this is a crude debounce hack. */
-		if (skipIters > 0) {
+		/* 
+		 This is a crude debounce hack. We are just going to
+		 bail out of update for DEBOUNCE_CYCLES after each
+		 Arduino.HIGH.
+		 */
+		if (skipIters > 0) 
+		{
 			skipIters--;
-		} else {
-			/* update clock */
-			currentTime = Time.time * 1000;
+			return;
+		} 
 
-			/* read switch, if newly high, update cadence */
-			currentSwitch = arduino.digitalRead(pin);
-			if (lastSwitch == Arduino.LOW && currentSwitch == Arduino.HIGH) {
-				float deltaTime = GetDeltaTimeAndUpdateTimer();
-				Debug.Log (deltaTime);
-				if (deltaTime == 0) {
-					currentCadence = 0;
-				} else {
-					currentCadence = 500 / deltaTime;
-				}
-				pedalCount++;
-				skipIters = 20;
-			} else if (currentTime - lastTime > 1500) {
-				currentCadence = 0;
-				lastTime = currentTime;
-			}
-			lastSwitch = currentSwitch;
+		/* update clock */
+		currentTime = Time.time * 1000;
+
+		/* Read switch, if newly high, then update cadence */
+		currentSwitch = arduino.digitalRead(PIN);
+		if (lastSwitch == Arduino.LOW && currentSwitch == Arduino.HIGH) {
+			currentCadence = GetDeltaTimeAndUpdateTimer();
+			pedalCount++;
+			skipIters = DEBOUNCE_CYCLES;
+		} else if (currentTime - lastTime > NO_READ_ZERO_CADENCE) {
+			currentCadence = 0;
+			lastTime = currentTime;
 		}
+		lastSwitch = currentSwitch;
 	}
 }
