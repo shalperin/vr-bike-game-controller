@@ -37,7 +37,6 @@ public class ArduinoCadence : MonoBehaviour {
 	void Start () 
 	{
 		arduino = Arduino.global;
-		arduino.Log = (s) => Debug.Log("Arduino: " +s);
 		arduino.Setup(ConfigurePins);
 		lastTime = Time.time * 1000;
 	}

@@ -13,7 +13,11 @@ By Sam Halperin
 
 ##Software Required to work with this repo##
 + Unity (Pro required for Oculus Rift Build)
-+ UniDunio (From asset store.  I think it's $10)
++ Unidunio (From asset store.  I think it's $10)
+    * Should and up with Uniduino folder in assets
+    * Don't forget to run Uniduino port configuration (Window > Uniduino)
++ Oculus VR Unity Support
+    * Should end up with OVR folder in Assets.
 
 ## Documentation of VR Bike Character Controller ##
 The code is in flux enough that detailed documentation of how it works probably doesn't make sense.  For now, read the code and see:
