@@ -1,42 +1,21 @@
-#### Added Oculus Rift DK-1 support 4/3/2014
+# VR Bike #
+By Sam Halperin
 
-<img src="http://www.samhalperin.com/img/content/vr-cycle/2.gif"></img>
+##Contents of this repo##
++ arduino sketches:  for debugging your hardware.  Once it's working with these sketches upload the standard firmata.
++ circuit diagrams
++ parts list
++ images of sensor
++ unity:  currently 2 fairly blank race track scenes.  One configured for Rift, the other not.
 
-<P>My parents used to have a vinyl album with the entire
-TRON audio.  Not just the soundtrack, but the actual dialog
-from the movie.  I remember listening to this over and over
-again when I was a kid.  The light-cycles in that film had
-a profound effect on me!</p>
+##Demos##
++ Various builds including a demo game** in progress. [https://drive.google.com/folderview?id=0B_30ya1OhlSBaGo5VktVWDVZYjQ&usp=sharing](https://drive.google.com/folderview?id=0B_30ya1OhlSBaGo5VktVWDVZYjQ&usp=sharing)  **Demo game contains non-free assets, so the github repo you are looking at is a pretty bare bones driver.)
 
-<p>Here I've used a reed switch based sensor attached to a portable, and
-minimal exercise bike.  When the pedals reach a certain angle, the switch closes, driving a timer.  The software reads time between interval, producing pedal cadence which is a good analog for bike velocity. (With some algorithmic smoothing.)</p>
+##Software Required to work with this repo##
++ Unity (Pro required for Oculus Rift Build)
++ UniDunio (From asset store.  I think it's $10)
 
-<img src="http://www.samhalperin.com/img/content/vr-cycle/030414-breadboard-mounted.jpg"></img>
+## Documentation of VR Bike Character Controller ##
+The code is in flux enough that detailed documentation of how it works probably doesn't make sense.  For now, read the code and see:
 
-<img src="http://www.samhalperin.com/img/content/vr-cycle/030414-magnet-over-reed.jpg"></img>
-
-<img src="http://www.samhalperin.com/img/content/vr-cycle/030314-breadboard.jpg"></img>
-Breadboard with reed switch (lower left), and Arduino microcontroller. Circuit is closely based on Jeremy Blum's Arduino tutorials #1, #2.
-
-<img src="http://www.samhalperin.com/img/content/vr-cycle/test2.png"></img>
-Sensor data smoothing.
-
-<img src="http://www.samhalperin.com/img/content/vr-cycle/virtual-led.png"></img>
-
-Debugging / development script - blink a virtual "LED"
-
-<img src="http://www.samhalperin.com/img/content/vr-cycle/rift1.png"></img>
-
-View through the oculus rift.
-
-<A href="http://youtu.be/8-5TP7u9_3g"><img src="http://www.samhalperin.com/img/content/vr-cycle/youtube.png"></img></a>
-
-<a href="https://www.youtube.com/watch?v=gG0tEmPvsMc"><img src="http://www.samhalperin.com/img/content/vr-cycle/youtube2.png"></img></a>
-
-<h1>Resources</h1>
-<ul>
-<li><a href="http://www.instructables.com/id/Arduino-Bike-Speedometer/">http://www.instructables.com/id/Arduino-Bike-Speedometer/</a> by Amanda Ghassaei</li>
-<li>Jeremy Blum's Arduino videos: <a href="https://www.youtube.com/watch?v=fCxzA9_kg6s">https://www.youtube.com/watch?v=fCxzA9_kg6s</a></li>
-<li><a href="http://www.uniduino.com/topics/tutorials/">UniDuino Tutorials</a> from UniDuino.com</li>
-<li><a href="https://www.youtube.com/watch?v=vPOKZ62SAiI">Character controller tutorial</a> by Grim Grin Gaming</li>
-</ul>
++ The narrative log from the original developement: [http://www.samhalperin.com/blog/Oculus-Rift--Unity--Arduino--Bicycle-Controller---Development-Log](http://www.samhalperin.com/blog/Oculus-Rift--Unity--Arduino--Bicycle-Controller---Development-Log)

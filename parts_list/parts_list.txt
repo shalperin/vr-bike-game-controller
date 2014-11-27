@@ -1,0 +1,19 @@
+# Parts List #
+
+Some of this comes from (http://www.instructables.com/id/Arduino-Bike-Speedometer/)[http://www.instructables.com/id/Arduino-Bike-Speedometer/]
+
+See the sensor images and circuit diagrams one folder up for an idea of how to assemble.
+
+## For a non-solder version on a breadboard ##
++ Arduino Uno REV 3 Radioshack 276-128
++ Small breadboard and assorted jumper wires (suggest buying a Make.com starter kit that comes with an arduino)
++ Switch-Magnetic Reed Radioshack 55050593 (http://www.radioshack.com/54-632-switch-magnetic-reed-flange-mnt/55050593.html#q=reed%2Bswitch&start=1)[http://www.radioshack.com/54-632-switch-magnetic-reed-flange-mnt/55050593.html#q=reed%2Bswitch&start=1]
++ 10K Ohm 1/4-Watt Carbon Film Resistor Radioshack #271-1335
+
+
+## Additionally For a nicely finished project##
++ Soldering supplies (suggest Make.com getting started with soldering kit.)
++ 1/8" stereo panel mount jack
++1/8" stereo plug
++ Arduino Proto Shield (http://www.amazon.com/Arduino-Proto-Shield-R3-Assembled/dp/B007QXTRNA)[http://www.amazon.com/Arduino-Proto-Shield-R3-Assembled/dp/B007QXTRNA]
++ Project box (http://www.amazon.com/SparkFun-Arduino-Project-Enclosure/dp/B004G51HCK)[http://www.amazon.com/SparkFun-Arduino-Project-Enclosure/dp/B004G51HCK]
