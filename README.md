@@ -1,6 +1,8 @@
 # VR Bike #
 By Sam Halperin
 
+####Please note: I am an electronics amateur posting this to document a hobby project.  If you see something grossly unsafe or otherwise wrong here, please <a href="mailto:sam@samhalperin.com">email me at sam@samhalperin.com</a>####
+
 ##Contents of this repo##
 + arduino sketches:  for debugging your hardware.  Once it's working with these sketches upload the standard firmata.
 + circuit diagrams

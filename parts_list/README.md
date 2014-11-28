@@ -2,7 +2,7 @@
 
 ####Please note: I am an electronics amateur posting this to document a hobby project.  If you see something grossly unsafe or otherwise wrong here, please <a href="mailto:sam@samhalperin.com">email me at sam@samhalperin.com</a>####
 
-Whew, with that out of the way... The genesis of this project was partially Amanda Ghassaei's [Arduino Powered Bike Speedometer](http://www.instructables.com/id/Arduino-Bike-Speedometer/?ALLSTEPS)  See the sensor images and circuit diagrams one folder up for an idea of how to assemble.
+Whew, with that out of the way... The genesis of this project was partially Amanda Ghassaei's [Arduino Powered Bike Speedometer](http://www.instructables.com/id/Arduino-Bike-Speedometer/?ALLSTEPS).  See the sensor images and circuit diagrams one folder up for an idea of how to assemble.
 
 
 ## For a non-solder version on a breadboard you need: ##
