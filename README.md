@@ -11,7 +11,7 @@ By Sam Halperin
 + unity:  currently 2 fairly blank race track scenes.  One configured for Rift, the other not.
 
 ##Demos##
-+ Various builds including a demo game** in progress. [https://drive.google.com/folderview?id=0B_30ya1OhlSBaGo5VktVWDVZYjQ&usp=sharing](https://drive.google.com/folderview?id=0B_30ya1OhlSBaGo5VktVWDVZYjQ&usp=sharing)  **Demo game contains non-free assets, so the github repo you are looking at is a pretty bare bones driver.)
++ [Various builds including a demo game**](https://drive.google.com/folderview?id=0B_30ya1OhlSBaGo5VktVWDVZYjQ&usp=sharing) in progress.   (**Demo game contains non-free assets, so the github repo you are looking at is a pretty bare bones driver.)
 
 ##Software Required to work with this repo##
 + Unity (Pro required for Oculus Rift Build)
@@ -24,4 +24,4 @@ By Sam Halperin
 ## Documentation of VR Bike Character Controller ##
 The code is in flux enough that detailed documentation of how it works probably doesn't make sense.  For now, read the code and see:
 
-+ The narrative log from the original developement: [http://www.samhalperin.com/blog/Oculus-Rift--Unity--Arduino--Bicycle-Controller---Development-Log](http://www.samhalperin.com/blog/Oculus-Rift--Unity--Arduino--Bicycle-Controller---Development-Log)
++ [The narrative log from the original developement](http://www.samhalperin.com/blog/Oculus-Rift--Unity--Arduino--Bicycle-Controller---Development-Log)

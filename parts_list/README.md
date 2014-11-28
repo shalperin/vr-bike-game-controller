@@ -24,3 +24,9 @@ Whew, with that out of the way... The genesis of this project was partially Aman
 | [Arduino project enclosure](https://www.sparkfun.com/products/10088) | $11.95 | |
 
 
+## Basic indoor bicycles that I have used ##
+| Part | Price | Note |
+|------|-------|------|
+| [Drive Medical Deluxe Folding Exercise Peddler with Electronic Display] (Drive Medical Deluxe Folding Exercise Peddler with Electronic Display , Black) | $28.26 | This is pretty basic, but works well for debugging and typing without having to get off of a stationary bike or rig up a keyboard stand.  Pro-tip: put it on carpet and use a non rolling chair. |
+| Exercise bike with magnetic resistance (not tested)| | I'd be interested to know if there is any kind of interference on the reed switch with a real stationary bike that uses magnetic resistance.|
+| Bicycle on training stand (not tested) | | The scale factor that translates cadence (or wheel rotation) to camera speed is easily accessible
