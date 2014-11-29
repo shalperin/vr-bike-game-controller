@@ -1,1 +1,0 @@
-####Please note: I am an electronics amateur posting this to document a hobby project.  If you see something grossly unsafe or otherwise wrong here, please <a href="mailto:sam@samhalperin.com">email me at sam@samhalperin.com</a>####
