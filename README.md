@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/16209/shalperin/vr-bike.svg)](https://zenodo.org/badge/latestdoi/16209/shalperin/vr-bike)
+
 #VR Bike #
 By Sam Halperin
 
