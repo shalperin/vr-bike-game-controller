@@ -24,10 +24,10 @@ Please note: My expertise is software engineering, not EE.  If you see something
 
 
 # Exploring Bicycle-Based Virtual Reality Exergames as a Design Space
-<p>
-	<a href="http://www.samhalperin.com/img/projects/vr-cycle/2015-01-06-poster.pdf">
-		<img src="http://www.samhalperin.com/img/projects/vr-cycle/poster-thumbnail.png" /></a>
-</p>
+
+![Poster](/design_assets/poster.png?raw=true)
+
+
 <h2>Abstract</h2>
 <p>With the introduction of devices like the Oculus Rift, Samsung Gear, and Google Cardboard, immersive virtual reality experiences are emerging from research laboratories into mainstream use.  These experiences are characterized by the sense of presence that they create, putting participants visually, viscerally and psychologically into imagined, historical, representational, and impossible environments.</p>
 
@@ -43,8 +43,9 @@ Please note: My expertise is software engineering, not EE.  If you see something
 <p>	Modern devices like the Oculus Rift, a moderate resolution, wide field-of-view pair of goggles that a user wears, produce compelling experiences, centered on the experience of ‘presence’. Presence is “the subjective experience of being in one place or environment, even when one is physically situated in another”  (Witmer &amp; Singer, 1998). The Oculus Rift, and devices of its class, uniquely creates this sense of presence where viewing on a TV or tablet does not.</p>
 <p>There are myriad applications of virtual reality technology including, but not limited to: architectural visualization, collaboration and communication, entertainment, and storytelling.  Because research on ‘presence’ was limited to a relatively small set of VR labs in the past, ‘applications of presence’  to a larger set of problems is a relatively new field.  As evidenced by communities like the Philadelphia and New York VR Meetups, this is primarily driven by the wider audience of experimenters that have access to working with the phenomenon.</p>
 <p>VR Bicycle based experiences, one class of applications that center on exertion, have been extensively studied.  Mestre, Dagonneau, and Mercier (2011) indicated that this type of experience does effectively motivate exercise.   While we know in a coarse way that the VR interface itself might contribute to enjoyment and motivation from this study, less is known about the characteristics (particularly in terms of game dynamics) that delineate effective VR exergaming experiences from less effective ones.</p>
-<p>
-	<img src="http://www.samhalperin.com/img/projects/vr-cycle/vr-bike-island.gif"></img></p>
+
+![Video game](design_assets/animated.gif)
+
 <p><p>Exergames are experiences that intend to include exertion as part of  their human physiological context.  Movement based games must engage in the active management of fatigue (Mueller &amp; Isbister 2014).  Techniques for evaluating movement games include the measurement of heart rate , as well as subjective instruments focused on evaluating perceived exertion (Huang, Tsai, Sung,  Lin, &amp; Chuang,  2008).</p>
 <p>VR is not without its challenges.  Primarily, fully occlusive virtual environments can create a ‘simulator sickness’ (SS) in many users. (Steinicke &amp; Bruder, 2014).  SS is caused by a visual/vestibular mismatch between what is seen on the VR display and what the inner ear and proprioceptive human systems experience (Zhang, Li, Kuhl, 2014; Steinecke &amp; Bruder, 2014).    </p>
 
@@ -53,13 +54,14 @@ Please note: My expertise is software engineering, not EE.  If you see something
 <p>Gaver (2012) describes ‘design science’ as a process of the ‘generative’ creation of artifacts to explore a design space, and the annotation of those artifacts to describe a theory around the work.  Often this work is done in the context of user-centered design, with feedback from user studies informing the design process .   Read in conjunction with Buxton (2010), who articulated ideas on the sketching process (as different from prototyping process) for generating user interface designs (2010), and expanding the designers toolkit to include game engines that allow rapid prototyping, it is easy to see an approach for design research based on ‘making’ in this field.</p>
 
 <h3>Research questions could include:</h3>
-<ul>
-<li>What can be learned  about creative mappings of RPM pedaling data to game dynamics such as riding speed, airplane throttle, point accrual, player health, shields and weapons.  In particular, non-linear mapping from RPM to these should be explored with the goal of, as Mueller &amp; Isbister (2011) suggest, creating fun and well articulated controllers.</li>
-<li>How can the phenomenon of “presence” be leveraged effectively for exergames.  Questions to be answered could center around whether riding/driving is the most compelling dynamic for an exergame, particularly with considerations for simulator sickness.  This could be explored through the creation of prototype experiences that do not center on riding.  (Work that was started with the VR/Exergaming poster and skeet shooting example at NSU Fall 2015 poster session.)</li>
-<p>
-	<img src="http://www.samhalperin.com/img/projects/vr-cycle/virtual-led.png"></img>
-</p>
-</ul>
+
++ What can be learned  about creative mappings of RPM pedaling data to game dynamics such as riding speed, airplane throttle, point accrual, player health, shields and weapons.  In particular, non-linear mapping from RPM to these should be explored with the goal of, as Mueller &amp; Isbister (2011) suggest, creating fun and well articulated controllers.
+
++ How can the phenomenon of “presence” be leveraged effectively for exergames.  Questions to be answered could center around whether riding/driving is the most compelling dynamic for an exergame, particularly with considerations for simulator sickness.  This could be explored through the creation of prototype experiences that do not center on riding.  (Work that was started with the VR/Exergaming poster and skeet shooting example at NSU Fall 2015 poster session.)
+
+![Sensor tuning](/design_assets/sensor_tuning.png)
+
+
 
 <h2>Literature Review</h2>
 <p>Bicycle based VR games universally map RPM pedal cadence to some aspect of game play.  It is understood from movement game theory and from other domains such as redirected walking that direct, linear mappings of sensor data can be problematic in terms of ambiguity of the data and also in terms of a missed opportunity to creatively map movement to game dynamics (Mueller &amp; Isbister 2014, Zhang et. al., 2014).</p>
@@ -71,9 +73,7 @@ Please note: My expertise is software engineering, not EE.  If you see something
 <p>	The idea that motion data should be interpreted non-linearly arises in both movement theory gaming research, falling under the category of ‘taking advantage of ambiguities in movement’ and ‘celebrating articulation’ (Mueller &amp; Isbister 2014)  as well as virtual reality research more focused on applications like ‘redirected walking’, a process of modifying user inputs so that walking movements can explore a large virtual space using a constrained laboratory environment. (Zhang et. al., 2014).
 Redirected walking is outside of the scope of this paper, but is a good example of how abstractions from real movement yield interesting results in VR.	The outcome of the work by Zhang et. al. reflects an opportunity to creatively map sensor data in an exergame, as they noted that participants do not universally notice modifications of sensor data from the real.  Both the ambiguity of sensor data, and the possibility of creating a more interesting experience are well understood in the movement gaming research.</p>
 
-<p>
-	<img src="http://www.samhalperin.com/img/projects/vr-cycle/main.png"/>
-</p>
+![Rig](design_assets/rig.png)
 
 <p>Like many other exergaming sensors, sensor data from low-cost stationary bicycle based apparati can be imprecise.  Even where a direct mapping from RPM to camera velocity is possible, it may not be desired. (Mueller and Isbister 2014).</p>
 
