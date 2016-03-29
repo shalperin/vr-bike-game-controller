@@ -1,7 +1,8 @@
 [![DOI](https://zenodo.org/badge/16209/shalperin/vr-bike.svg)](https://zenodo.org/badge/latestdoi/16209/shalperin/vr-bike)
 
-#VR Bike #
-By Sam Halperin
+# Open VR Bike Ride
+![](design_assets/vrbike.png) 
+##By Sam Halperin
 
 ##Safety Note##
 Please note: My expertise is software engineering, not EE.  If you see something grossly unsafe or otherwise wrong here, please email me at [sam@samhalperin.com](mailto:sam@samhalperin.com)
