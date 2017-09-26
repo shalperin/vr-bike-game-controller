@@ -2,7 +2,7 @@
 
 # Exploring Bicycle-Based Virtual Reality Exergames as a Design Space
 
-![Poster](/design_assets/poster.png?raw=true)
+![Poster](https://github.com/shalperin/vr-bike/raw/master/design_assets/poster.png?raw=true)
 
 ## Contents of this repo
 + **arduino sketches**:  For debugging hardware while it is being built.  Once it's working with these sketches upload the standard firmata so that the software can communicate with it.
@@ -44,7 +44,7 @@ There are myriad applications of virtual reality technology including, but not l
 
 VR Bicycle based experiences, one class of applications that center on exertion, have been extensively studied.  Mestre, Dagonneau, and Mercier (2011) indicated that this type of experience does effectively motivate exercise.   While we know in a coarse way that the VR interface itself might contribute to enjoyment and motivation from this study, less is known about the characteristics (particularly in terms of game dynamics) that delineate effective VR exergaming experiences from less effective ones.
 
-![Video game](design_assets/animated.gif)
+![Video game](https://github.com/shalperin/vr-bike/raw/master/design_assets/animated.gif)
 
 Exergames are experiences that intend exertion as part of their human physiological context.  Movement based games must engage in the active management of fatigue (Mueller &amp; Isbister 2014).  Techniques for evaluating movement games include the measurement of heart rate , as well as subjective instruments focused on evaluating perceived exertion (Huang, Tsai, Sung,  Lin, &amp; Chuang,  2008).
 
@@ -62,7 +62,7 @@ Gaver (2012) describes ‘design science’ as a process of the ‘generative’
 
 + How can the phenomenon of “presence” be leveraged effectively for exergames.  Questions to be answered could center around whether riding/driving is the most compelling dynamic for an exergame, particularly with considerations for simulator sickness.  This could be explored through the creation of prototype experiences that do not center on riding.  (Work that was started with the VR/Exergaming poster and skeet shooting example at NSU Fall 2015 poster session.)
 
-![Sensor tuning](/design_assets/sensor_tuning.png)
+![Sensor tuning](https://github.com/shalperin/vr-bike/raw/master/design_assets/sensor_tuning.png)
 
 
 
@@ -82,7 +82,7 @@ However, in addition to the coarse or nonexistent game dynamics in the Park stud
 The idea that motion data should be interpreted non-linearly arises in both movement theory gaming research, falling under the category of ‘taking advantage of ambiguities in movement’ and ‘celebrating articulation’ (Mueller &amp; Isbister 2014)  as well as virtual reality research more focused on applications like ‘redirected walking’, a process of modifying user inputs so that walking movements can explore a large virtual space using a constrained laboratory environment. (Zhang et. al., 2014).
 Redirected walking is outside of the scope of this paper, but is a good example of how abstractions from real movement yield interesting results in VR.	The outcome of the work by Zhang et. al. reflects an opportunity to creatively map sensor data in an exergame, as they noted that participants do not universally notice modifications of sensor data from the real.  Both the ambiguity of sensor data, and the possibility of creating a more interesting experience are well understood in the movement gaming research.
 
-![Rig](design_assets/rig.png)
+![Rig](https://github.com/shalperin/vr-bike/raw/master/design_assets/rig.png)
 
 Like many other exergaming sensors, sensor data from low-cost stationary bicycle based apparati can be imprecise.  Even where a direct mapping from RPM to camera velocity is possible, it may not be desired. (Mueller and Isbister 2014).
 
